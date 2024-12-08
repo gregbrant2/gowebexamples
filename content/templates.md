@@ -70,7 +70,7 @@ tmpl := template.Must(template.ParseFiles("layout.html"))
 ## Execute a Template in a Request Handler
 Once the template is parsed from disk it's ready to be used in the request handler.
 The `Execute` function accepts an `io.Writer` for writing out the template and an `interface{}` to pass data into the template.
-When the function is called on an `http.ResponseWriter` the Content-Type is header is automatically set in the HTTP response to `Content-Type: text/html; charset=utf-8`.
+When the function is called on an `http.ResponseWriter` the Content-Type header is automatically set in the HTTP response to `Content-Type: text/html; charset=utf-8`.
 
 {{< highlight go >}}
 func(w http.ResponseWriter, r *http.Request) {
