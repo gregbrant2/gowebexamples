@@ -58,7 +58,7 @@ Control Structure | Definition
 
 ## Parsing Templates from Files
 Template can either be parsed from a string or a file on disk.
-As it is usually the case, that templates are pares from disk, this example shows how to do so.
+As it is usually the case, that templates are parsed from disk, this example shows how to do so.
 In this example there is a template file in the same directory as the Go program called `layout.html`.
 
 {{< highlight go >}}
